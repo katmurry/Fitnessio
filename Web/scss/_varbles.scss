@@ -1,0 +1,59 @@
+//Font Handling
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,800italic,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,700);
+
+$fonts: (
+	os: 'Open Sans',
+	ssp: 'Source Sans Pro',
+);
+
+//Custom Break Points
+$desktop: 992px;
+$tablet: 768px;
+$phablet: 641px;
+$mobile: 599px;
+$mid: 460px;
+$phone: 360px;
+$iphone: 320px;
+
+$wrapWidth: 1300px;
+
+//to handle media queries
+@mixin mediaq($size, $min: false) {
+	@if $size == tablet{
+		@media screen and (max-width: 768px) {
+			width: 100% !important;
+			text-align: center;
+		}
+	}
+
+	//technically, this portion is not needed, but included here to add more customization options if you want to add more..
+	@else if $size == mobile{
+		@media screen and (max-width: 599px) {
+			// @content;
+		}
+	}
+	@else if $size == phone{
+		@media screen and (max-width: 360px) {
+			// @content;
+		}
+	}
+	@else if $size == iphone{
+		@media screen and (max-width: 320px) {
+			// @content;
+		}
+	}
+	//Ends here ...
+
+	//to include min-width
+	@else if $min == true{
+		@media screen and (min-width: $size) {
+			@content;
+		}
+	}
+	@else {
+		@media screen and (max-width: $size) {
+			@content;
+		}
+	}
+}

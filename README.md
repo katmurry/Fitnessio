@@ -3,7 +3,7 @@
 A completely made up website for a gym.
 
 --- Additional Comments ---
-.gitignore list -
+#.gitignore list
 prepros.cfg
 PSDs-AI
 Raw Img folders

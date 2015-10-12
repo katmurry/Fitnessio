@@ -7,3 +7,4 @@ A completely made up website for a gym.
 prepros.cfg
 PSDs-AI
 Raw Img folders
+Jpgs in the Screenshots folder

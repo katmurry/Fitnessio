@@ -2,3 +2,5 @@ prepros.cfg
 /Graphics/Raw Imgs
 /Graphics/PSD-AI
 /Graphics/Screenshots
+/gulpfile.js
+/node_modules

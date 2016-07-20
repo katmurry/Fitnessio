@@ -1,6 +1,4 @@
-prepros.cfg
-/Graphics/Raw Imgs
-/Graphics/PSD-AI
-/Graphics/Screenshots
+/graphics
 /gulpfile.js
 /node_modules
+/package.json

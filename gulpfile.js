@@ -71,4 +71,5 @@ gulp.task('images', function() {
 gulp.task('default', ['serve', 'html', 'sass', 'images'], function() {
   gulp.watch('./*.html').on('change', reload);
   gulp.watch('./assets/scss/*.scss', ['sass']);
+  gulp.watch('./assets/scss/*.scss').on('change', reload);
 });

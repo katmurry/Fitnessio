@@ -1,0 +1,29 @@
+html {
+  font-size: 0;
+}
+
+.wrapper-1116 {
+  text-align: center;
+}
+
+.header {
+  background: url('/assets/tiny/top_bg.min.jpg');
+}
+
+.module8 {
+  padding: 10pt;
+  ul {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1116px;
+    width: 100%;
+  }
+  li {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    vertical-align: middle;
+    padding: 0 4%;
+  }
+
+}

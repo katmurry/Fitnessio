@@ -1,0 +1,59 @@
+//shorthand for media queries
+@mixin mediaq($size, $min: false) {
+	@if $size == tablet{
+		@media screen and (max-width: 768px) {
+			width: 100% !important;
+			text-align: center;
+		}
+	}
+
+	@else if $size == mobile{
+		@media screen and (max-width: 599px) {
+			// @content;
+		}
+	}
+	@else if $size == phone{
+		@media screen and (max-width: 360px) {
+			// @content;
+		}
+	}
+	@else if $size == iphone{
+		@media screen and (max-width: 320px) {
+			// @content;
+		}
+	}
+
+	//to include min-width
+	@else if $min == true{
+		@media screen and (min-width: $size) {
+			@content;
+		}
+	}
+	@else {
+		@media screen and (max-width: $size) {
+			@content;
+		}
+	}
+}
+
+//Gradient Mixin vertical
+@mixin vertGradient($dkColor, $ltColor) {
+	background: $dkColor;
+	@each $prefix in -moz-,-webkit- {
+		background: #{$prefix}linear-gradient(top,  $dkColor 0%, $ltColor 100%);
+	}
+	background: linear-gradient(to bottom,  $dkColor 0%,$ltColor 100%);
+}
+
+//Gradient Mixin horizontal
+@mixin hzGradient($dkColor, $ltColor) {
+	background: $dkColor;
+	@each $prefix in -moz-,-webkit- {
+		background: #{$prefix}linear-gradient(left,  $dkColor 0%, $ltColor 100%);
+	}
+	background: linear-gradient(to right,  $dkColor 0%,$ltColor 100%);
+}
+
+/*------------------*/
+/*------------------*/
+/*------------------*/

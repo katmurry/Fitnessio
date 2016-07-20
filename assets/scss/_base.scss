@@ -1,0 +1,41 @@
+@import 'normalize';
+@import 'mixers';
+
+* {
+  box-sizing: border-box;
+}
+
+/*/
+===============
+== BREAK POINTS
+===============
+/*/
+
+$desktop: 1024px;
+$tablet: 768px;
+$phablet: 640px;
+$extra: 600px;
+$mobile: 540px;
+$mid: 460px;
+$phone: 360px;
+$iphone: 320px;
+
+/*/
+===============
+== FONT WEIGHTS
+===============
+/*/
+
+$thin: 100;
+$extra-light: 200;
+$light: 300;
+$normal: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+$black: 900;
+
+/*------------------*/
+/*------------------*/
+/*------------------*/

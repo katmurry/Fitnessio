@@ -1,12 +1,25 @@
-// reset and variable config
+/*/
+===============
+== RESET AND
+== CONFIGS
+===============
+/*/
+@import 'base';
+@import 'project-defaults';
+@import 'site-settings';
+@import 'font-handler';
 
-@import 'base/normalize';
-@import 'base/varbles';
-
-// modules
-
+/*/
+===============
+== MODULES
+===============
+/*/
 @import 'modules/module11';
 
-//theme
-
-// @import 'theme/contactForm';
+/*/
+===============
+== PROJECT BULK
+===============
+/*/
+@import 'layout';
+@import 'theme';
